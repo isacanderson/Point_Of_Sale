@@ -38,6 +38,8 @@
             this.labelTituloGastos = new System.Windows.Forms.Label();
             this.buttonAgregarGastos = new System.Windows.Forms.Button();
             this.panelAgregarGastos = new System.Windows.Forms.Panel();
+            this.labelCategoriaGastos = new System.Windows.Forms.Label();
+            this.comboBoxCategoriaGastos = new System.Windows.Forms.ComboBox();
             this.label1SimboloSolCompra = new System.Windows.Forms.Label();
             this.labelMontoCompra = new System.Windows.Forms.Label();
             this.labelDescripcionCompra = new System.Windows.Forms.Label();
@@ -46,8 +48,6 @@
             this.richTextBoxDescripcionGastos = new System.Windows.Forms.RichTextBox();
             this.panelMostrarGastos = new System.Windows.Forms.Panel();
             this.dataGridViewGastos = new System.Windows.Forms.DataGridView();
-            this.comboBoxCategoriaGastos = new System.Windows.Forms.ComboBox();
-            this.labelCategoriaGastos = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelAgregarGastos.SuspendLayout();
             this.panelMostrarGastos.SuspendLayout();
@@ -103,6 +103,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dateTimePickerHastaGastos.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerHastaGastos.Location = new System.Drawing.Point(278, 72);
+            this.dateTimePickerHastaGastos.MinDate = new System.DateTime(2023, 2, 1, 0, 0, 0, 0);
             this.dateTimePickerHastaGastos.Name = "dateTimePickerHastaGastos";
             this.dateTimePickerHastaGastos.Size = new System.Drawing.Size(102, 20);
             this.dateTimePickerHastaGastos.TabIndex = 5;
@@ -113,6 +114,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dateTimePickerDesdeGastos.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerDesdeGastos.Location = new System.Drawing.Point(84, 72);
+            this.dateTimePickerDesdeGastos.MinDate = new System.DateTime(2023, 2, 1, 0, 0, 0, 0);
             this.dateTimePickerDesdeGastos.Name = "dateTimePickerDesdeGastos";
             this.dateTimePickerDesdeGastos.Size = new System.Drawing.Size(102, 20);
             this.dateTimePickerDesdeGastos.TabIndex = 4;
@@ -120,7 +122,7 @@
             // buttonImprimiGastos
             // 
             this.buttonImprimiGastos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonImprimiGastos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
             this.buttonImprimiGastos.FlatAppearance.BorderSize = 0;
             this.buttonImprimiGastos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -173,7 +175,7 @@
             this.buttonAgregarGastos.Name = "buttonAgregarGastos";
             this.buttonAgregarGastos.Size = new System.Drawing.Size(107, 37);
             this.buttonAgregarGastos.TabIndex = 0;
-            this.buttonAgregarGastos.Text = "AGREGAR COMPRAS";
+            this.buttonAgregarGastos.Text = "AGREGAR GASTOS";
             this.buttonAgregarGastos.UseVisualStyleBackColor = false;
             this.buttonAgregarGastos.Click += new System.EventHandler(this.buttonAgregarCompras_Click);
             // 
@@ -193,6 +195,31 @@
             this.panelAgregarGastos.Size = new System.Drawing.Size(784, 139);
             this.panelAgregarGastos.TabIndex = 1;
             this.panelAgregarGastos.Visible = false;
+            // 
+            // labelCategoriaGastos
+            // 
+            this.labelCategoriaGastos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCategoriaGastos.AutoSize = true;
+            this.labelCategoriaGastos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCategoriaGastos.Location = new System.Drawing.Point(275, 27);
+            this.labelCategoriaGastos.Name = "labelCategoriaGastos";
+            this.labelCategoriaGastos.Size = new System.Drawing.Size(78, 13);
+            this.labelCategoriaGastos.TabIndex = 7;
+            this.labelCategoriaGastos.Text = "CATEGORIA";
+            // 
+            // comboBoxCategoriaGastos
+            // 
+            this.comboBoxCategoriaGastos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxCategoriaGastos.FormattingEnabled = true;
+            this.comboBoxCategoriaGastos.Items.AddRange(new object[] {
+            "COMPRAS",
+            "OTROS EGRESOS"});
+            this.comboBoxCategoriaGastos.Location = new System.Drawing.Point(278, 43);
+            this.comboBoxCategoriaGastos.Name = "comboBoxCategoriaGastos";
+            this.comboBoxCategoriaGastos.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCategoriaGastos.TabIndex = 6;
             // 
             // label1SimboloSolCompra
             // 
@@ -283,27 +310,6 @@
             this.dataGridViewGastos.Name = "dataGridViewGastos";
             this.dataGridViewGastos.Size = new System.Drawing.Size(784, 352);
             this.dataGridViewGastos.TabIndex = 0;
-            // 
-            // comboBoxCategoriaGastos
-            // 
-            this.comboBoxCategoriaGastos.FormattingEnabled = true;
-            this.comboBoxCategoriaGastos.Items.AddRange(new object[] {
-            "COMPRAS",
-            "OTROS EGRESOS"});
-            this.comboBoxCategoriaGastos.Location = new System.Drawing.Point(278, 43);
-            this.comboBoxCategoriaGastos.Name = "comboBoxCategoriaGastos";
-            this.comboBoxCategoriaGastos.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxCategoriaGastos.TabIndex = 6;
-            // 
-            // labelCategoriaGastos
-            // 
-            this.labelCategoriaGastos.AutoSize = true;
-            this.labelCategoriaGastos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCategoriaGastos.Location = new System.Drawing.Point(275, 27);
-            this.labelCategoriaGastos.Name = "labelCategoriaGastos";
-            this.labelCategoriaGastos.Size = new System.Drawing.Size(78, 13);
-            this.labelCategoriaGastos.TabIndex = 7;
-            this.labelCategoriaGastos.Text = "CATEGORIA";
             // 
             // Gastos
             // 

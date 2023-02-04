@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.panelMenuLateral = new System.Windows.Forms.Panel();
-            this.panelSubMenuPuntoVenta = new System.Windows.Forms.Panel();
-            this.panelSubMenuAdministracion = new System.Windows.Forms.Panel();
-            this.panelContenedor = new System.Windows.Forms.Panel();
-            this.buttonOcultarMenuLateral = new System.Windows.Forms.Button();
-            this.pictureBoxLogoRestaurant = new System.Windows.Forms.PictureBox();
             this.buttonSalir = new System.Windows.Forms.Button();
+            this.panelSubMenuPuntoVenta = new System.Windows.Forms.Panel();
             this.buttonCaja = new System.Windows.Forms.Button();
             this.buttonMonVentasPV = new System.Windows.Forms.Button();
             this.buttonTurno = new System.Windows.Forms.Button();
             this.buttonVender = new System.Windows.Forms.Button();
             this.buttonPuntoVenta = new System.Windows.Forms.Button();
+            this.panelSubMenuAdministracion = new System.Windows.Forms.Panel();
             this.buttonProductos = new System.Windows.Forms.Button();
             this.buttonMonVentasAdm = new System.Windows.Forms.Button();
-            this.buttonCompras = new System.Windows.Forms.Button();
+            this.buttonGastos = new System.Windows.Forms.Button();
             this.buttonAdministracion = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.buttonOcultarMenuLateral = new System.Windows.Forms.Button();
+            this.pictureBoxLogoRestaurant = new System.Windows.Forms.PictureBox();
             this.panelMenuLateral.SuspendLayout();
             this.panelSubMenuPuntoVenta.SuspendLayout();
             this.panelSubMenuAdministracion.SuspendLayout();
@@ -67,65 +67,6 @@
             this.panelMenuLateral.Size = new System.Drawing.Size(200, 611);
             this.panelMenuLateral.TabIndex = 0;
             // 
-            // panelSubMenuPuntoVenta
-            // 
-            this.panelSubMenuPuntoVenta.Controls.Add(this.buttonCaja);
-            this.panelSubMenuPuntoVenta.Controls.Add(this.buttonMonVentasPV);
-            this.panelSubMenuPuntoVenta.Controls.Add(this.buttonTurno);
-            this.panelSubMenuPuntoVenta.Controls.Add(this.buttonVender);
-            this.panelSubMenuPuntoVenta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuPuntoVenta.Location = new System.Drawing.Point(0, 460);
-            this.panelSubMenuPuntoVenta.Name = "panelSubMenuPuntoVenta";
-            this.panelSubMenuPuntoVenta.Size = new System.Drawing.Size(200, 240);
-            this.panelSubMenuPuntoVenta.TabIndex = 4;
-            // 
-            // panelSubMenuAdministracion
-            // 
-            this.panelSubMenuAdministracion.Controls.Add(this.buttonProductos);
-            this.panelSubMenuAdministracion.Controls.Add(this.buttonMonVentasAdm);
-            this.panelSubMenuAdministracion.Controls.Add(this.buttonCompras);
-            this.panelSubMenuAdministracion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuAdministracion.Location = new System.Drawing.Point(0, 200);
-            this.panelSubMenuAdministracion.Name = "panelSubMenuAdministracion";
-            this.panelSubMenuAdministracion.Size = new System.Drawing.Size(200, 180);
-            this.panelSubMenuAdministracion.TabIndex = 2;
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(235)))), ((int)(((byte)(220)))));
-            this.panelContenedor.Controls.Add(this.buttonOcultarMenuLateral);
-            this.panelContenedor.Controls.Add(this.pictureBoxLogoRestaurant);
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(200, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(784, 611);
-            this.panelContenedor.TabIndex = 1;
-            // 
-            // buttonOcultarMenuLateral
-            // 
-            this.buttonOcultarMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(120)))), ((int)(((byte)(47)))));
-            this.buttonOcultarMenuLateral.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonOcultarMenuLateral.FlatAppearance.BorderSize = 0;
-            this.buttonOcultarMenuLateral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOcultarMenuLateral.Image = global::PointOfSale.Presentation.Properties.Resources.logoMenuLateralNegro;
-            this.buttonOcultarMenuLateral.Location = new System.Drawing.Point(0, 270);
-            this.buttonOcultarMenuLateral.Name = "buttonOcultarMenuLateral";
-            this.buttonOcultarMenuLateral.Size = new System.Drawing.Size(35, 40);
-            this.buttonOcultarMenuLateral.TabIndex = 1;
-            this.buttonOcultarMenuLateral.UseVisualStyleBackColor = false;
-            this.buttonOcultarMenuLateral.Click += new System.EventHandler(this.buttonOcultarMenuLateral_Click);
-            // 
-            // pictureBoxLogoRestaurant
-            // 
-            this.pictureBoxLogoRestaurant.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxLogoRestaurant.Image = global::PointOfSale.Presentation.Properties.Resources.LogoMamaSabina;
-            this.pictureBoxLogoRestaurant.Location = new System.Drawing.Point(105, 147);
-            this.pictureBoxLogoRestaurant.Name = "pictureBoxLogoRestaurant";
-            this.pictureBoxLogoRestaurant.Size = new System.Drawing.Size(584, 333);
-            this.pictureBoxLogoRestaurant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxLogoRestaurant.TabIndex = 0;
-            this.pictureBoxLogoRestaurant.TabStop = false;
-            // 
             // buttonSalir
             // 
             this.buttonSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -141,6 +82,18 @@
             this.buttonSalir.Text = "SALIR";
             this.buttonSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonSalir.UseVisualStyleBackColor = true;
+            // 
+            // panelSubMenuPuntoVenta
+            // 
+            this.panelSubMenuPuntoVenta.Controls.Add(this.buttonCaja);
+            this.panelSubMenuPuntoVenta.Controls.Add(this.buttonMonVentasPV);
+            this.panelSubMenuPuntoVenta.Controls.Add(this.buttonTurno);
+            this.panelSubMenuPuntoVenta.Controls.Add(this.buttonVender);
+            this.panelSubMenuPuntoVenta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuPuntoVenta.Location = new System.Drawing.Point(0, 460);
+            this.panelSubMenuPuntoVenta.Name = "panelSubMenuPuntoVenta";
+            this.panelSubMenuPuntoVenta.Size = new System.Drawing.Size(200, 240);
+            this.panelSubMenuPuntoVenta.TabIndex = 4;
             // 
             // buttonCaja
             // 
@@ -227,6 +180,17 @@
             this.buttonPuntoVenta.UseVisualStyleBackColor = true;
             this.buttonPuntoVenta.Click += new System.EventHandler(this.buttonPuntoVenta_Click);
             // 
+            // panelSubMenuAdministracion
+            // 
+            this.panelSubMenuAdministracion.Controls.Add(this.buttonProductos);
+            this.panelSubMenuAdministracion.Controls.Add(this.buttonMonVentasAdm);
+            this.panelSubMenuAdministracion.Controls.Add(this.buttonGastos);
+            this.panelSubMenuAdministracion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuAdministracion.Location = new System.Drawing.Point(0, 200);
+            this.panelSubMenuAdministracion.Name = "panelSubMenuAdministracion";
+            this.panelSubMenuAdministracion.Size = new System.Drawing.Size(200, 180);
+            this.panelSubMenuAdministracion.TabIndex = 2;
+            // 
             // buttonProductos
             // 
             this.buttonProductos.Dock = System.Windows.Forms.DockStyle.Top;
@@ -261,22 +225,22 @@
             this.buttonMonVentasAdm.UseVisualStyleBackColor = true;
             this.buttonMonVentasAdm.Click += new System.EventHandler(this.buttonMonVentasAdm_Click);
             // 
-            // buttonCompras
+            // buttonGastos
             // 
-            this.buttonCompras.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonCompras.FlatAppearance.BorderSize = 0;
-            this.buttonCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCompras.Image = global::PointOfSale.Presentation.Properties.Resources.logoCompras;
-            this.buttonCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCompras.Location = new System.Drawing.Point(0, 0);
-            this.buttonCompras.Name = "buttonCompras";
-            this.buttonCompras.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.buttonCompras.Size = new System.Drawing.Size(200, 60);
-            this.buttonCompras.TabIndex = 0;
-            this.buttonCompras.Text = "COMPRAS";
-            this.buttonCompras.UseVisualStyleBackColor = true;
-            this.buttonCompras.Click += new System.EventHandler(this.buttonCompras_Click);
+            this.buttonGastos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonGastos.FlatAppearance.BorderSize = 0;
+            this.buttonGastos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGastos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGastos.Image = global::PointOfSale.Presentation.Properties.Resources.logoCompras;
+            this.buttonGastos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonGastos.Location = new System.Drawing.Point(0, 0);
+            this.buttonGastos.Name = "buttonGastos";
+            this.buttonGastos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.buttonGastos.Size = new System.Drawing.Size(200, 60);
+            this.buttonGastos.TabIndex = 0;
+            this.buttonGastos.Text = "GASTOS";
+            this.buttonGastos.UseVisualStyleBackColor = true;
+            this.buttonGastos.Click += new System.EventHandler(this.buttonCompras_Click);
             // 
             // buttonAdministracion
             // 
@@ -305,6 +269,42 @@
             this.panelLogo.Size = new System.Drawing.Size(200, 120);
             this.panelLogo.TabIndex = 0;
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(235)))), ((int)(((byte)(220)))));
+            this.panelContenedor.Controls.Add(this.buttonOcultarMenuLateral);
+            this.panelContenedor.Controls.Add(this.pictureBoxLogoRestaurant);
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(200, 0);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(784, 611);
+            this.panelContenedor.TabIndex = 1;
+            // 
+            // buttonOcultarMenuLateral
+            // 
+            this.buttonOcultarMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(120)))), ((int)(((byte)(47)))));
+            this.buttonOcultarMenuLateral.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOcultarMenuLateral.FlatAppearance.BorderSize = 0;
+            this.buttonOcultarMenuLateral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOcultarMenuLateral.Image = global::PointOfSale.Presentation.Properties.Resources.logoMenuLateralNegro;
+            this.buttonOcultarMenuLateral.Location = new System.Drawing.Point(0, 270);
+            this.buttonOcultarMenuLateral.Name = "buttonOcultarMenuLateral";
+            this.buttonOcultarMenuLateral.Size = new System.Drawing.Size(35, 40);
+            this.buttonOcultarMenuLateral.TabIndex = 1;
+            this.buttonOcultarMenuLateral.UseVisualStyleBackColor = false;
+            this.buttonOcultarMenuLateral.Click += new System.EventHandler(this.buttonOcultarMenuLateral_Click);
+            // 
+            // pictureBoxLogoRestaurant
+            // 
+            this.pictureBoxLogoRestaurant.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxLogoRestaurant.Image = global::PointOfSale.Presentation.Properties.Resources.LogoMamaSabina;
+            this.pictureBoxLogoRestaurant.Location = new System.Drawing.Point(105, 147);
+            this.pictureBoxLogoRestaurant.Name = "pictureBoxLogoRestaurant";
+            this.pictureBoxLogoRestaurant.Size = new System.Drawing.Size(584, 333);
+            this.pictureBoxLogoRestaurant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxLogoRestaurant.TabIndex = 0;
+            this.pictureBoxLogoRestaurant.TabStop = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,7 +332,7 @@
         private System.Windows.Forms.Button buttonAdministracion;
         private System.Windows.Forms.Panel panelSubMenuAdministracion;
         private System.Windows.Forms.Button buttonMonVentasAdm;
-        private System.Windows.Forms.Button buttonCompras;
+        private System.Windows.Forms.Button buttonGastos;
         private System.Windows.Forms.Button buttonProductos;
         private System.Windows.Forms.Button buttonPuntoVenta;
         private System.Windows.Forms.Panel panelContenedor;
