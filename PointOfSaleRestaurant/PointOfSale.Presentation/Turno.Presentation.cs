@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PointOfSale.Presentation
 {
-    public partial class Form1 : Form
+    public partial class Turno : Form
     {
-        public Form1()
+        public Turno()
         {
             InitializeComponent();
         }

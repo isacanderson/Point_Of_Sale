@@ -1,6 +1,6 @@
 ﻿namespace PointOfSale.Presentation
 {
-    partial class Form1
+    partial class MonitorVentasPV
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // MonitorVentasPV
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(235)))), ((int)(((byte)(220)))));
+            this.ClientSize = new System.Drawing.Size(784, 611);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "MonitorVentasPV";
+            this.Text = "MonitorVentasPV";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
